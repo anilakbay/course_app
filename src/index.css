@@ -1,0 +1,7 @@
+/* Genel stil ayarları */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0f7fa; /* Açık mavi arka plan rengi */
+  font-family: Arial, sans-serif; /* Varsayılan font */
+}

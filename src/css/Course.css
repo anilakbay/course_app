@@ -1,0 +1,72 @@
+/* Kurs ana kapsayıcı */
+.course-main {
+  display: flex;
+  flex-wrap: wrap; /* Satır başına birden fazla kursu sığdırmak için */
+  justify-content: center; /* Kartları ortala */
+  gap: 20px; /* Kartlar arasındaki boşluk */
+  padding: 20px; /* Kapsayıcının içindeki boşluk */
+}
+
+/* Kurs kartı */
+.course {
+  width: 250px;
+  height: auto; /* Yüksekliği içeriğe göre ayarla */
+  border: 1px solid lightgray;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+  background-color: #fff; /* Arka plan rengi beyaz */
+  display: flex;
+  flex-direction: column; /* İçeriği dikey hizala */
+  align-items: center; /* İçeriği ortala */
+}
+
+/* Görsel */
+.course-image {
+  width: 100%; /* Görselin kapsayıcıya uyum sağlaması için */
+  height: auto; /* Yüksekliği orantılı olarak ayarla */
+  border-radius: 5px; /* Köşeleri yuvarla */
+}
+
+/* Başlık */
+.course-title {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin: 10px 0; /* Üst ve alt boşluk */
+}
+
+/* Açıklama */
+.course-desc {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 10px; /* Alt boşluk */
+}
+
+/* Fiyat */
+.course-price {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: red;
+  text-align: right;
+  margin-top: auto; /* Kartın altına itme */
+  padding-right: 20px;
+}
+
+/* Bağlantı */
+.course-link a {
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 15px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  background-color: #007bff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.course-link a:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
